@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 // Components
 import Header from "./../Header";
 import { Outlet } from "react-router-dom";
+import Footer from "../Footer";
+import Sidebar from "../Sidebar";
 
 export default function Main() {
   // const [loggedIn, setloggedIn] = useState(false);
@@ -21,16 +23,17 @@ export default function Main() {
   return (
     <>
       {loggedIn === true ? (
-        <div className="">
+        <div className="main_structure">
           <Header />
-          <div className="">
-            {/* <Sidebar /> */}
-            <div className="">
+          <div className="main_body">
+            <Sidebar />
+            <div className="main_content">
               <div className="">
                 <Outlet />
               </div>
             </div>
           </div>
+          <Footer />
         </div>
       ) : (
         <div className="">
