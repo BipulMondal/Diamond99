@@ -42,7 +42,7 @@
   margin-top: 22px;
 }
 .header_main {
-  background-color: #f1c40f;
+  background-color: #0088cc;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -111,63 +111,7 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.list_four,
-.list_three {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-.list_four:hover {
-  color: white;
-  cursor: pointer;
-}
-.list_content {
-  display: none;
-  position: absolute;
-  background-color: #f1c40f;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  width: 240px;
-  margin-left: -17px;
-  /* margin-top: 5px; */
-}
-.list_four:hover .list_content {
-  display: block;
-}
-.list_content a,
-.list_content_three a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-weight: bold;
-  font-size: 15px;
-}
-.list_content a:hover {
-  color: white;
-}
-.list_three:hover .list_content_three {
-  display: block;
-}
-.list_content_three {
-  display: none;
-  position: absolute;
-  background-color: #f1c40f;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  width: 240px;
-  margin-left: -17px;
-  /* margin-top: 5px; */
-}
-.list_content_three a {
-  text-decoration: none;
-  color: black;
-}
-.list_content_three a:hover {
-  color: white;
-}
+
 .client_list {
   display: flex;
   justify-content: space-between;
@@ -210,6 +154,10 @@
 .black_middle {
   display: flex;
   justify-content: space-between;
+}
+.home_second_container {
+  background-color: grey;
+  margin-top: 8px;
 }
 .add_account_main {
   width: 98%;
@@ -309,4 +257,93 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .main_table {
   text-align: center !important;
+}
+
+/*--------------- Diamond 99 project start ------------*/
+.main_body {
+  height: auto;
+  display: flex;
+  padding: 5px;
+}
+.sidebar_main {
+  width: 15%;
+}
+.panel-heading {
+  background-color: #0088cc;
+}
+.metismenu-link {
+  padding: 5px;
+  text-decoration: none !important;
+  cursor: pointer;
+  color: white;
+}
+.metismenu-link :hover {
+  color: white !important;
+}
+.main_content {
+  margin-left: 5px;
+}
+.panel-collapse {
+  background: #bbbbbb;
+  color: #000000;
+  border-bottom: 1px solid #9e9e9e;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0px 15px;
+  height: 25px;
+}
+.nav-link {
+  color: black; /* Default color */
+  text-decoration: none; /* Remove underline */
+}
+
+.nav-link:hover {
+  color: black; /* Prevent color change on hover */
+  text-decoration: none; /* Prevent underline on hover */
+}
+.active-tab {
+  background-color: black;
+  color: white;
+}
+.footer_item {
+  display: flex;
+  background-color: dodgerblue;
+  height: 62px;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+.footer_left {
+display: flex;
+}
+.home_top_container {
+  display: flex;
+}
+.container_1 {
+  margin-left: 3px;
+  background-color: #2a4088;
+}
+.footer_down_left {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_buttom {
+  margin-left: 40%;
+}
+.header_list ul {
+  display: flex;
+}
+.header_list ul li {
+  margin-left: 40px;
+}
+.header_list {
+  background-color: black;
+  color: white;
+  height: 35px;
+}
+.footer_up {
+  display: flex;
+}
+.footer_text {
+  margin-left: 15px;
 }
