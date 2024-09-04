@@ -3,7 +3,7 @@
   padding: 0;
 }
 .login_main {
-  background-color: black;
+  background-image: linear-gradient(#0088cc, #2C3E50);
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -15,7 +15,7 @@
   width: 400px;
 }
 .from_head {
-  background-color: #d5d5d5;
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
   margin-top: 30px;
@@ -37,24 +37,7 @@
   position: relative;
   text-align: center;
 }
-.sign_in_txt::before {
-  content: "";
-  position: absolute;
-  top: 19px;
-  left: 0;
-  height: 2px;
-  width: 65px;
-  background-color: #000;
-}
-.sign_in_txt::after {
-  content: "";
-  position: absolute;
-  top: 19px;
-  right: 0;
-  height: 2px;
-  width: 65px;
-  background-color: #000;
-}
+
 .username {
   margin-top: 22px;
 }
