@@ -30,16 +30,6 @@ const Dashboard = () => {
           <li className="nav-item">
             <p
               className={`nav-link ${
-                activeTab === "Active" ? "active-tab" : ""
-              }`}
-              onClick={() => handleTabClick("Active")}
-            >
-              Politics
-            </p>
-          </li>
-          <li className="nav-item">
-            <p
-              className={`nav-link ${
                 activeTab === "Link1" ? "active-tab" : ""
               }`}
               onClick={() => handleTabClick("Link1")}
@@ -57,20 +47,6 @@ const Dashboard = () => {
               Football
             </p>
           </li>
-          
-          <li className="nav-item">
-            <p
-              className={`nav-link ${
-                activeTab === "Disabled" ? "active-tab" : ""
-              }`}
-              tabIndex="-1"
-              aria-disabled="true"
-              onClick={() => handleTabClick("Disabled")}
-            >
-              Esoccer
-            </p>
-          </li>
-
           <li className="nav-item">
             <p
               className={`nav-link ${
@@ -81,71 +57,6 @@ const Dashboard = () => {
               onClick={() => handleTabClick("Disabled")}
             >
               Tennis
-            </p>
-          </li>
-
-          <li className="nav-item">
-            <p
-              className={`nav-link ${
-                activeTab === "Disabled" ? "active-tab" : ""
-              }`}
-              tabIndex="-1"
-              aria-disabled="true"
-              onClick={() => handleTabClick("Disabled")}
-            >
-              Horse Racing
-            </p>
-          </li>
-
-          <li className="nav-item">
-            <p
-              className={`nav-link ${
-                activeTab === "Disabled" ? "active-tab" : ""
-              }`}
-              tabIndex="-1"
-              aria-disabled="true"
-              onClick={() => handleTabClick("Disabled")}
-            >
-              Greyhound Racing
-            </p>
-          </li>
-
-          <li className="nav-item">
-            <p
-              className={`nav-link ${
-                activeTab === "Disabled" ? "active-tab" : ""
-              }`}
-              tabIndex="-1"
-              aria-disabled="true"
-              onClick={() => handleTabClick("Disabled")}
-            >
-              Table Tennis
-            </p>
-          </li>
-
-          <li className="nav-item">
-            <p
-              className={`nav-link ${
-                activeTab === "Disabled" ? "active-tab" : ""
-              }`}
-              tabIndex="-1"
-              aria-disabled="true"
-              onClick={() => handleTabClick("Disabled")}
-            >
-            Basketball
-            </p>
-          </li>
-
-          <li className="nav-item">
-            <p
-              className={`nav-link ${
-                activeTab === "Disabled" ? "active-tab" : ""
-              }`}
-              tabIndex="-1"
-              aria-disabled="true"
-              onClick={() => handleTabClick("Disabled")}
-            >
-              Boxing
             </p>
           </li>
 
