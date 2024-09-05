@@ -32,7 +32,7 @@ const Login = () => {
       if (res && res.success) {
         localStorage.setItem("token", res?.data?.accessToken);
         toast.success(res?.message);
-        navigate("/marketanalysis")
+        navigate("/marketanalysis");
       } else {
         toast.error(res?.message);
       }
@@ -42,50 +42,62 @@ const Login = () => {
   };
 
   return (
-    <div className="login_main">
-      <div className="from_main">
-        <div className="logo_div">
-          <img className="logo" src={logo} alt="logo" />
-        </div>
-        <div className="from_head">
-          <div className="text_main">
-            <h3 className="sign_in_txt">Login <i class="fa-solid fa-hand-point-down"></i></h3>
+    <>
+      <div className="login_main">
+        <div className="from_main">
+          <div className="logo_div">
+            <img className="logo" src={logo} alt="logo" />
           </div>
-          <form onSubmit={handleSubmit}>
-            <div class="mb-3 username">
-              <input
-                type="text"
-                name="username"
-                value={loginData.username}
-                class="form-control"
-                id="exampleInputEmail1"
-                placeholder="Username"
-                onChange={(e) => handleChnage(e)}
-              />
+          <div className="from_head">
+            <div className="text_main">
+              <h3 className="sign_in_txt">
+                Login <i class="fa-solid fa-hand-point-down"></i>
+              </h3>
             </div>
-            <div class="mb-3">
-              <input
-                type="password"
-                name="password"
-                value={loginData.password}
-                class="form-control"
-                id="exampleInputPassword1"
-                placeholder="Password"
-                onChange={(e) => handleChnage(e)}
-              />
-              
-            </div>
-            <button type="submit" class="btn btn-dark login_btn">
-              Login
-            </button>
-            
-            <button type="submit" class="btn btn-dark login_btn">
-              Login with demo ID
-            </button>
-          </form>
+            <form onSubmit={handleSubmit}>
+              <div class="mb-3 username">
+                <input
+                  type="text"
+                  name="username"
+                  value={loginData.username}
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="Username"
+                  onChange={(e) => handleChnage(e)}
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  name="password"
+                  value={loginData.password}
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                  onChange={(e) => handleChnage(e)}
+                />
+              </div>
+              <button type="submit" class="btn btn-dark login_btn">
+                Login
+              </button>
+
+              <button type="submit" class="btn btn-dark login_btn">
+                Login with demo ID
+              </button>
+            </form>
+          </div>
+        </div>
+        <div className="footer_item">
+          <div className="footer_left">
+            <p>Terms and Conditions</p>
+            <p> Responsible Gaming</p>
+          </div>
+          <div className="footer_left_2">
+            <p>24X7 Support</p>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

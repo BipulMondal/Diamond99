@@ -13,16 +13,16 @@ const Dashboard = () => {
     <div className="home_container">
       <div className="home_top_container">
         <div className="container_1">
-          <h6 className="container_1_text">% usa president icon</h6>
+          <h6 className="container_1_text"><i class="d-icon me-1 icon-40"></i>USA - Presidential Election 2024</h6>
         </div>
         <div className="container_1">
-          <h6 className="container_1_text">% usa president icon</h6>
+          <h6 className="container_1_text">Caribbean Premier League - Winner</h6>
         </div>
         <div className="container_1">
-          <h6 className="container_1_text">% usa president icon</h6>
+          <h6 className="container_1_text">Portugal v Croatia</h6>
         </div>
         <div className="container_1">
-          <h6 className="container_1_text">% usa president icon</h6>
+          <h6 className="container_1_text">Serbia v Spain</h6>
         </div>
       </div>
       <div className="home_second_container">

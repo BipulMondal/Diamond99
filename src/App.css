@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+p {
+  margin-bottom: 0;
+}
 .login_main {
   background-image: linear-gradient(#0088cc, #2c3e50);
   height: 100vh;
@@ -77,11 +80,6 @@
   color: white;
   font-weight: bold;
 }
-.herder_right p {
-  margin-right: 20px;
-  margin-top: 13px;
-}
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -314,9 +312,15 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 20px;
   font-weight: bold;
 }
+.text_bold {
+  font-weight: bold;
+}
 .footer_left {
   display: flex;
   width: 60%;
+  font-size: 18px;
+  padding-left: 20px;
+  gap: 15px;
 }
 .footer_left_2 {
   width: 60%;
@@ -337,7 +341,7 @@ input[type="number"]::-webkit-outer-spin-button {
   color: white;
 }
 .container_1_text {
-  padding-left: 60px;
+  padding-left: 18px;
 }
 .footer_down_left {
   display: flex;
@@ -366,7 +370,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .footer_up {
   display: flex;
   height: 50px;
-  width: 100px;
   margin-top: 20px;
   margin-left: 20px;
 }
@@ -421,7 +424,10 @@ input[type="number"]::-webkit-outer-spin-button {
 .header_text1,
 .header_text2 {
   margin-right: 22px;
-  font-size: 22px;
+  font-size: 15px;
+}
+.header_blnc {
+  font-weight: normal;
 }
 .game_left h4 {
   font-size: 12px;
@@ -447,7 +453,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .nav-item {
   cursor: pointer;
-  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 .nav-link {
   padding-top: 4px;
@@ -463,4 +469,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .bold {
   font-weight: bold;
+}
+.demo {
+  background: #0088cc;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
 }

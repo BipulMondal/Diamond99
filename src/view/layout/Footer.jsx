@@ -9,17 +9,17 @@ const Footer = () => {
     <>
       <div className="footer_item">
         <div className="footer_left">
-          <div>Terms and Conditions</div>
-          <div className="footer_left_1">Responsible Gaming</div>
+          <p>Terms and Conditions</p>
+          <p> Responsible Gaming</p>
         </div>
-        <div className="footer_left_2">24X7 Support</div>
+        <div className="footer_left_2"><p>24X7 Support</p></div>
       </div>
       <div>
         <div className="footer_down_left">
           <div className="footer_up">
             <img src={logo1} alt="" />
             <div className="footer_text">
-            <h6>100% SAFE</h6>
+            <p className="text_bold">100% SAFE</p>
             <p>Protected connection and encrypted data.</p>
             </div>
           </div>
