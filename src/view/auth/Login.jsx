@@ -49,7 +49,7 @@ const Login = () => {
         </div>
         <div className="from_head">
           <div className="text_main">
-            <h3 className="sign_in_txt">Login <i class="fas fa-hand-point-down"></i></h3>
+            <h3 className="sign_in_txt">Login <i class="fa-solid fa-hand-point-down"></i></h3>
           </div>
           <form onSubmit={handleSubmit}>
             <div class="mb-3 username">

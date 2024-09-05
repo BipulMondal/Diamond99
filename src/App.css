@@ -350,19 +350,12 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   font-weight: 20px;
 }
-.form-control {
-  background-color: #0088cc;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
+
 .header_list ul li {
   margin-left: 40px;
   list-style: none;
 }
-.headBody {
-  border-top: 1px solid black;
-}
+
 .header_list {
   background-color: #2c3e50;
   color: white;
@@ -397,6 +390,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .headBody {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid black;
+  height: 20px;
+  font-size: 12px;
 }
 .game_left {
   width: 58%;
@@ -428,7 +424,7 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 22px;
 }
 .game_left h4 {
-  font-size: 17px;
+  font-size: 12px;
   padding: 3px 0px;
   font-weight: 400;
 }
