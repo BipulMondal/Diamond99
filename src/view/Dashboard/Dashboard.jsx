@@ -13,16 +13,16 @@ const Dashboard = () => {
     <div className="home_container">
       <div className="home_top_container">
         <div className="container_1">
-          <h4>% usa president icon</h4>
+          <h6 className="container_1_text">% usa president icon</h6>
         </div>
         <div className="container_1">
-          <h4>% usa president icon</h4>
+          <h6 className="container_1_text">% usa president icon</h6>
         </div>
         <div className="container_1">
-          <h4>% usa president icon</h4>
+          <h6 className="container_1_text">% usa president icon</h6>
         </div>
         <div className="container_1">
-          <h4>% usa president icon</h4>
+          <h6 className="container_1_text">% usa president icon</h6>
         </div>
       </div>
       <div className="home_second_container">
@@ -32,10 +32,9 @@ const Dashboard = () => {
               className={`nav-link ${
                 activeTab === "Active" ? "active-tab" : ""
               }`}
-              to="#"
               onClick={() => handleTabClick("Active")}
             >
-              Active
+              Politics
             </p>
           </li>
           <li className="nav-item">
@@ -43,10 +42,9 @@ const Dashboard = () => {
               className={`nav-link ${
                 activeTab === "Link1" ? "active-tab" : ""
               }`}
-              to="#"
               onClick={() => handleTabClick("Link1")}
             >
-              Link
+              Cricket
             </p>
           </li>
           <li className="nav-item">
@@ -54,29 +52,107 @@ const Dashboard = () => {
               className={`nav-link ${
                 activeTab === "Link2" ? "active-tab" : ""
               }`}
-              to="#"
               onClick={() => handleTabClick("Link2")}
             >
-              Link
+              Football
             </p>
           </li>
+          
           <li className="nav-item">
             <p
               className={`nav-link ${
                 activeTab === "Disabled" ? "active-tab" : ""
               }`}
-              to="#"
               tabIndex="-1"
               aria-disabled="true"
               onClick={() => handleTabClick("Disabled")}
             >
-              Disabled
+              Esoccer
             </p>
           </li>
+
+          <li className="nav-item">
+            <p
+              className={`nav-link ${
+                activeTab === "Disabled" ? "active-tab" : ""
+              }`}
+              tabIndex="-1"
+              aria-disabled="true"
+              onClick={() => handleTabClick("Disabled")}
+            >
+              Tennis
+            </p>
+          </li>
+
+          <li className="nav-item">
+            <p
+              className={`nav-link ${
+                activeTab === "Disabled" ? "active-tab" : ""
+              }`}
+              tabIndex="-1"
+              aria-disabled="true"
+              onClick={() => handleTabClick("Disabled")}
+            >
+              Horse Racing
+            </p>
+          </li>
+
+          <li className="nav-item">
+            <p
+              className={`nav-link ${
+                activeTab === "Disabled" ? "active-tab" : ""
+              }`}
+              tabIndex="-1"
+              aria-disabled="true"
+              onClick={() => handleTabClick("Disabled")}
+            >
+              Greyhound Racing
+            </p>
+          </li>
+
+          <li className="nav-item">
+            <p
+              className={`nav-link ${
+                activeTab === "Disabled" ? "active-tab" : ""
+              }`}
+              tabIndex="-1"
+              aria-disabled="true"
+              onClick={() => handleTabClick("Disabled")}
+            >
+              Table Tennis
+            </p>
+          </li>
+
+          <li className="nav-item">
+            <p
+              className={`nav-link ${
+                activeTab === "Disabled" ? "active-tab" : ""
+              }`}
+              tabIndex="-1"
+              aria-disabled="true"
+              onClick={() => handleTabClick("Disabled")}
+            >
+            Basketball
+            </p>
+          </li>
+
+          <li className="nav-item">
+            <p
+              className={`nav-link ${
+                activeTab === "Disabled" ? "active-tab" : ""
+              }`}
+              tabIndex="-1"
+              aria-disabled="true"
+              onClick={() => handleTabClick("Disabled")}
+            >
+              Boxing
+            </p>
+          </li>
+
         </ul>
       </div>
       <div className="home_body">
-       <GameDataTable />
+        <GameDataTable />
       </div>
     </div>
   );

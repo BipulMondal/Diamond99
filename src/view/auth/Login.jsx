@@ -73,9 +73,14 @@ const Login = () => {
                 placeholder="Password"
                 onChange={(e) => handleChnage(e)}
               />
+              
             </div>
             <button type="submit" class="btn btn-dark login_btn">
               Login
+            </button>
+            
+            <button type="submit" class="btn btn-dark login_btn">
+              Login with demo ID
             </button>
           </form>
         </div>

@@ -19,11 +19,14 @@ const Header = () => {
           </div>
         </div>
         <div className="herder_right">
-          <div>
+          <div className="header_search_icon">
             <i class="fa fa-search-plus" aria-hidden="true"></i>
           </div>
-          <div>Rules</div>
-          <div>Blance:1500</div>
+          <div className="header_text1">Rules</div>
+          <div className="header_text2">
+            <h6>Blance:1500</h6>
+            <h6>Exp:0</h6>
+          </div>
           <div>
             <select class="form-control" id="exampleFormControlSelect1">
               <option selected>Demo</option>
@@ -36,11 +39,11 @@ const Header = () => {
       </div>
       <div className="header_list">
         <ul>
-          <li>HOME</li>
-          <li>LOTTERY</li>
-          <li>CRICKET</li>
-          <li>FOOTBALL</li>
-          <li>TENNIS</li>
+          <li className="bold">HOME</li>
+          <li className="bold">LOTTERY</li>
+          <li className="bold">CRICKET</li>
+          <li className="bold">FOOTBALL</li>
+          <li className="bold">TENNIS</li>
         </ul>
       </div>
     </>

@@ -1,6 +1,8 @@
 import React from "react";
 import logo1 from "../../images/ssl.png";
 import logo2 from "../../images/18plus.png";
+import logo3 from "../../images/gamecare.png";
+import logo4 from "../../images/gt.png";
 
 const Footer = () => {
   return (
@@ -8,9 +10,9 @@ const Footer = () => {
       <div className="footer_item">
         <div className="footer_left">
           <div>Terms and Conditions</div>
-          <div>Responsible Gaming</div>
+          <div className="footer_left_1">Responsible Gaming</div>
         </div>
-        <div>24X7 Support</div>
+        <div className="footer_left_2">24X7 Support</div>
       </div>
       <div>
         <div className="footer_down_left">
@@ -22,7 +24,9 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <img src={logo2} alt="" />
+            <img src={logo2} alt="" className="footer_logo"/>
+            <img src={logo3} alt="" className="footer_logo"/>
+            <img src={logo4} alt="" className="footer_logo"/>
           </div>
         </div>
         <div>
