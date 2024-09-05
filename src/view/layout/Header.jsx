@@ -30,9 +30,11 @@ const Header = () => {
           <div>
             <select class="demo" id="exampleFormControlSelect1">
               <option selected>Demo</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value="1">Account Statement</option>
+              <option value="2">Current Bet</option>
+              <option value="3">Casino Results</option>
+              <option value="4">Set Button Values</option>
+              <option value="5">Sign Out</option>
             </select>
           </div>
         </div>
