@@ -297,10 +297,6 @@ input[type="number"]::-webkit-outer-spin-button {
   text-decoration: none; /* Remove underline */
 }
 
-.nav-link:hover {
-  color: black; /* Prevent color change on hover */
-  text-decoration: none; /* Prevent underline on hover */
-}
 .active-tab {
   background-color: black;
   color: white;
@@ -346,4 +342,43 @@ display: flex;
 }
 .footer_text {
   margin-left: 15px;
+}
+.head_main {
+  display: flex;
+  justify-content: space-between;
+}
+.head_left {
+  width: 58%;
+  background-color: cadetblue;
+}
+.head_right {
+  background-color: bisque;
+  display: flex;
+  justify-content: space-around;
+  width: 42%;
+}
+.headBody {
+  display: flex;
+  justify-content: space-between;
+}
+.game_left {
+  width: 58%;
+}
+.game_right {
+  display: flex;
+  width: 42%;
+}
+.bg_blue {
+  background-color: #0088cc;
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg_pink {
+  background-color: pink;
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

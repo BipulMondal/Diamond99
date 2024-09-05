@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import GameDataTable from "../../components/GameDataTable";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("");
@@ -26,47 +28,55 @@ const Dashboard = () => {
       <div className="home_second_container">
         <ul className="nav nav-pills">
           <li className="nav-item">
-            <a
-              className={`nav-link ${activeTab === "Active" ? "active-tab" : ""}`}
-              href="#"
+            <p
+              className={`nav-link ${
+                activeTab === "Active" ? "active-tab" : ""
+              }`}
+              to="#"
               onClick={() => handleTabClick("Active")}
             >
               Active
-            </a>
+            </p>
           </li>
           <li className="nav-item">
-            <a
-              className={`nav-link ${activeTab === "Link1" ? "active-tab" : ""}`}
-              href="#"
+            <p
+              className={`nav-link ${
+                activeTab === "Link1" ? "active-tab" : ""
+              }`}
+              to="#"
               onClick={() => handleTabClick("Link1")}
             >
               Link
-            </a>
+            </p>
           </li>
           <li className="nav-item">
-            <a
-              className={`nav-link ${activeTab === "Link2" ? "active-tab" : ""}`}
-              href="#"
+            <p
+              className={`nav-link ${
+                activeTab === "Link2" ? "active-tab" : ""
+              }`}
+              to="#"
               onClick={() => handleTabClick("Link2")}
             >
               Link
-            </a>
+            </p>
           </li>
           <li className="nav-item">
-            <a
-              className={`nav-link ${activeTab === "Disabled" ? "active-tab" : ""}`}
-              href="#"
+            <p
+              className={`nav-link ${
+                activeTab === "Disabled" ? "active-tab" : ""
+              }`}
+              to="#"
               tabIndex="-1"
               aria-disabled="true"
               onClick={() => handleTabClick("Disabled")}
             >
               Disabled
-            </a>
+            </p>
           </li>
         </ul>
       </div>
       <div className="home_body">
-        
+       <GameDataTable />
       </div>
     </div>
   );
