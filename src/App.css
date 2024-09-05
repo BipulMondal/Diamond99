@@ -74,6 +74,7 @@
   display: flex;
   align-items: center;
   margin-right: 30px;
+  color: white;
 }
 .herder_right p {
   margin-right: 20px;
@@ -335,15 +336,21 @@ display: flex;
 }
 .header_list ul li {
   margin-left: 40px;
+  list-style: none;
 }
 .header_list {
   background-color: black;
   color: white;
   height: 35px;
+  padding-top: 10px;
 }
 .footer_up {
   display: flex;
 }
 .footer_text {
   margin-left: 15px;
+}
+.header_search_icon, .header_text1, .header_text2 {
+  margin-right: 22px;
+  font-size: 22px;
 }
