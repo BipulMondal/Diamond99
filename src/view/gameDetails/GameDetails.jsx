@@ -91,15 +91,14 @@ const GameDetails = () => {
         {/* 4th div */}
         <div className="normal_main_body">
           <div className="normal_main_left">
-            <div className="book_maker_main">
+            <div className="normal_maker_main">
               <div className="black_header">
                 <p>Normal</p>
               </div>
               <div className="normal_body">
-                <div className="bookmark_body_single">
+                <div className="normal_body_single">
                   <div className="normal_body_left">
                     <p>---</p>
-                    
                   </div>
                   <div className="normal_body_right">
                     <div className="body_right darkblue">No</div>
@@ -107,6 +106,7 @@ const GameDetails = () => {
                     <div className="body_right">-----</div>
                   </div>
                 </div>
+
                 <div className="bookmark_body_single">
                   <div className="bookmaker_body_left">
                     <p>15 over run GL</p>

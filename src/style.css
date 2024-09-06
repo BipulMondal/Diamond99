@@ -65,22 +65,40 @@
 }
 .lighterblue {
   background-color: rgb(137 197 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .lightblue {
   background-color: rgb(107 175 191);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .darkblue {
   background-color: #46c5cb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .lighterpink {
   background-color: #ebdbe0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .lightpink {
   background-color: #d9b3bf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .darkpink {
   background-color: #d99fb2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .normal_main_body {
