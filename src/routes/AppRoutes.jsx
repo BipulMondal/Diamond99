@@ -3,6 +3,7 @@ import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import Login from "../view/auth/Login";
 import Main from "../view/layout/main/Main";
 import Dashboard from "../view/Dashboard/Dashboard";
+import GameDetails from "../view/gameDetails/GameDetails";
 
 
 function AppRoutes() {
@@ -28,6 +29,7 @@ function AppRoutes() {
     <Routes>
       <Route path="/" element={<Main />}>
         <Route index element={<Dashboard />} />
+        <Route path="gamedetails" element={<GameDetails />} />
     
       </Route>
       <Route path="/login" element={<Login />} />
