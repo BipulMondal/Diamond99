@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 const GameDetails = () => {
+  const [showVideo, setShowVideo] = useState(false);
+  const [showPlaceBet, setPlaceBet] = useState(true);
+
+  const openPlaceBet = () => {
+    setPlaceBet(true);
+  };
+
   return (
     <div className="game_details_main">
       <div className="game_details_main_left">
@@ -37,13 +44,13 @@ const GameDetails = () => {
             </div>
           </div>
         </div>
-        {/* 3rd div */}
+        {/* 3rd bookmaker div */}
         <div className="book_maker_main">
           <div className="black_header">
             <p>Bookmaker</p>
           </div>
           <div className="bookmaker_body">
-            <div className="bookmark_body_single">
+            <div className="bookmaker_body_single">
               <div className="bookmaker_body_left">
                 <p>Min - 100 </p>
                 <p>Max - 1L</p>
@@ -57,10 +64,9 @@ const GameDetails = () => {
                 <div className="body_right"></div>
               </div>
             </div>
-            <div className="bookmark_body_single">
+            <div className="bookmaker_body_single">
               <div className="bookmaker_body_left">
-                <p>Lucknow Falcons</p>
-                <p>620</p>
+                <p>Lucknow Falcons 620</p>
               </div>
               <div className="bookmaker_body_right">
                 <div className="body_right lighterblue">-</div>
@@ -71,7 +77,7 @@ const GameDetails = () => {
                 <div className="body_right lighterpink"> -</div>
               </div>
             </div>
-            <div className="bookmark_body_single">
+            <div className="bookmaker_body_single">
               <div className="bookmaker_body_left">
                 <p>Gorakhpur Lions</p>
                 <p>-1,000</p>
@@ -88,58 +94,75 @@ const GameDetails = () => {
           </div>
         </div>
 
-        {/* 4th div */}
+        {/* 4th normal div */}
+        <div className="black_header">
+          <p>Normal</p>
+        </div>
         <div className="normal_main_body">
           <div className="normal_main_left">
             <div className="normal_maker_main">
-              <div className="black_header">
-                <p>Normal</p>
-              </div>
               <div className="normal_body">
                 <div className="normal_body_single">
                   <div className="normal_body_left">
-                    <p>---</p>
+                    <p></p>
                   </div>
                   <div className="normal_body_right">
                     <div className="body_right darkblue">No</div>
                     <div className="body_right darkpink">Yes</div>
-                    <div className="body_right">-----</div>
+                    <div className="body_right"></div>
                   </div>
                 </div>
 
-                <div className="bookmark_body_single">
+                <div className="normal_body_single">
                   <div className="bookmaker_body_left">
                     <p>15 over run GL</p>
-                    
                   </div>
                   <div className="bookmaker_body_right">
-                    <div className="body_right darkblue">76</div>
-                    <div className="body_right darkpink">80</div>
-                    <div className="body_right lightpink">-</div>
+                    <div className="body_right darkblue" onClick={openPlaceBet}>
+                      76
+                    </div>
+                    <div className="body_right darkpink" onClick={openPlaceBet}>
+                      80
+                    </div>
+                    <div className="body_right min_max_bet">
+                      <p>Min 100</p>
+                      <p>Max 2L</p>
+                    </div>
                   </div>
                 </div>
-                <div className="bookmark_body_single">
+                <div className="normal_body_single">
                   <div className="bookmaker_body_left">
                     <p>11 over run GL</p>
-                    
                   </div>
                   <div className="bookmaker_body_right">
-                    <div className="body_right darkblue">125</div>
-                    <div className="body_right darkpink">131</div>
-                    <div className="body_right lightpink">-</div>
+                    <div className="body_right darkblue" onClick={openPlaceBet}>
+                      125
+                    </div>
+                    <div className="body_right darkpink" onClick={openPlaceBet}>
+                      131
+                    </div>
+                    <div className="body_right min_max_bet">
+                      <p>Min 100</p>
+                      <p>Max 2L</p>
+                    </div>
                   </div>
                 </div>
 
-                
-                <div className="bookmark_body_single">
+                <div className="normal_body_single">
                   <div className="bookmaker_body_left">
                     <p>12 over run GL</p>
-                    
                   </div>
                   <div className="bookmaker_body_right">
-                    <div className="body_right darkblue">125</div>
-                    <div className="body_right darkpink">131</div>
-                    <div className="body_right lightpink">-</div>
+                    <div className="body_right darkblue" onClick={openPlaceBet}>
+                      125
+                    </div>
+                    <div className="body_right darkpink" onClick={openPlaceBet}>
+                      131
+                    </div>
+                    <div className="body_right min_max_bet">
+                      <p>Min 100</p>
+                      <p>Max 2L</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -147,55 +170,435 @@ const GameDetails = () => {
           </div>
           <div className="normal_main_right">
             <div className="book_maker_main">
-              <div className="black_header">
-                <p></p>
-              </div>
               <div className="bookmaker_body">
-                <div className="bookmark_body_single">
-                  <div className="">
-                    <p>Min - 100 </p>
-                    <p>Max - 1L</p>
+                <div className="normal_body_single">
+                  <div className="normal_body_left">
+                    <p></p>
                   </div>
-                  <div className="bookmaker_body_right">
-                  
-                    <div className="body_right darkblue">Back</div>
-                    <div className="body_right darkpink">Lay</div>
+                  <div className="normal_body_right">
+                    <div className="body_right darkblue">No</div>
+                    <div className="body_right darkpink">Yes</div>
                     <div className="body_right"></div>
-                    
                   </div>
                 </div>
-                <div className="bookmark_body_single">
+                <div className="normal_body_single">
                   <div className="bookmaker_body_left">
                     <p>Lucknow Falcons</p>
                     <p>620</p>
                   </div>
                   <div className="bookmaker_body_right">
-                    
                     <div className="body_right darkblue">76</div>
                     <div className="body_right darkpink">80</div>
-                    <div className="body_right lightpink">-</div>
-                    
+                    <div className="body_right min_max_bet">
+                      <p>Min 100</p>
+                      <p>Max 2L</p>
+                    </div>
                   </div>
                 </div>
-                <div className="bookmark_body_single">
+                <div className="normal_body_single">
                   <div className="">
                     <p>Gorakhpur Lions</p>
                     <p>-1,000</p>
                   </div>
                   <div className="bookmaker_body_right">
-                    
                     <div className="body_right darkblue">125</div>
                     <div className="body_right darkpink">131</div>
-                    <div className="body_right lightpink">-</div>
-                    
+                    <div className="body_right min_max_bet">
+                      <p>Min 100</p>
+                      <p>Max 2L</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div className="black_header">
+          <p>Over By Over</p>
+        </div>
+        <div>
+          <div className="normal_body_single">
+            <div className="normal_body_left">
+              <p></p>
+            </div>
+            <div className="normal_body_right">
+              <div className="body_right darkblue">No</div>
+              <div className="body_right darkpink">Yes</div>
+              <div className="body_right"></div>
+            </div>
+          </div>
+
+          <div className="normal_body_single">
+            <div className="">
+              <p>Gorakhpur Lions</p>
+              <p>-1,000</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">125</div>
+              <div className="body_right darkpink">131</div>
+              <div className="body_right min_max_bet">
+                <p>Min 100</p>
+                <p>Max 2L</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="black_header">
+          <p>Over By Over</p>
+        </div>
+
+        <div className="normal_main_body">
+          <div className="normal_main_left">
+            <div className="normal_maker_main">
+              <div className="normal_body">
+                <div className="normal_body_single">
+                  <div className="bookmaker_body_left">
+                    <p>15 over run GL</p>
+                  </div>
+                  <div className="bookmaker_body_right">
+                    <div className="body_right darkblue" onClick={openPlaceBet}>
+                      76
+                    </div>
+                    <div className="body_right darkblue" onClick={openPlaceBet}>
+                      80
+                    </div>
+                    <div className="body_right min_max_bet">
+                      <p>Min 100</p>
+                      <p>Max 2L</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="normal_body_single">
+                  <div className="bookmaker_body_left">
+                    <p>11 over run GL</p>
+                  </div>
+                  <div className="bookmaker_body_right">
+                    <div className="body_right darkblue" onClick={openPlaceBet}>
+                      125
+                    </div>
+                    <div className="body_right darkblue" onClick={openPlaceBet}>
+                      131
+                    </div>
+                    <div className="body_right min_max_bet">
+                      <p>Min 100</p>
+                      <p>Max 2L</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="normal_main_right">
+            <div className="book_maker_main">
+              <div className="bookmaker_body">
+                <div className="normal_body_single">
+                  <div className="bookmaker_body_left">
+                    <p>Lucknow Falcons</p>
+                    <p>620</p>
+                  </div>
+                  <div className="bookmaker_body_right">
+                    <div className="body_right darkblue">76</div>
+                    <div className="body_right darkblue">80</div>
+                    <div className="body_right min_max_bet">
+                      <p>Min 100</p>
+                      <p>Max 2L</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="black_header">
+          <p>Over By Over</p>
+        </div>
+        <div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              <p>Lucknow Falcons</p>
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+          <div className="normal_body_single">
+            <div className="bookmaker_body_left">
+              
+              <p>620</p>
+            </div>
+            <div className="bookmaker_body_right">
+              <div className="body_right darkblue">76</div>
+              <div className="body_right darkblue">80</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="game_details_main_right"></div>
+
+      {/* total right section */}
+      <div className="game_details_main_right">
+        <div className="mive_match_main">
+          <div
+            className="black_header live_match"
+            onClick={() => setShowVideo(!showVideo)}
+          >
+            Live Match
+          </div>
+          {showVideo && (
+            <div>
+              <iframe
+                width="336"
+                height="315"
+                src="https://www.youtube.com/embed/tmg6d3T_T6Q"
+                title="DiamondEXCH99"
+              ></iframe>
+            </div>
+          )}
+        </div>
+        {showPlaceBet && (
+          <div className="place_bet_main">
+            <div className="black_header place_bet">Place Bet</div>
+            <div className="place_bet_body">
+              <div className="place_bet_head">
+                <div className="place_header">
+                  <p>(Bet for)</p>
+                  <p>Odds</p>
+                </div>
+                <div className="place_header">
+                  <p>Stake</p>
+                  <p>Profit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+        <div className="mybet_main">
+          <div className="black_header mybet">My Bet</div>
+          <div className="mybet_bluediv">
+            <div className="mybet_bluediv_up">
+              <div>
+                <p>10 over Fun FL</p>
+                <p>-90</p>
+              </div>
+              <div className="">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <button type="button" class="btn btn-light"></button>
+              </div>
+
+              <div>
+                <p>0</p>
+              </div>
+            </div>
+            <div className="place_button">
+              <button className="btn btn-light">1k</button>
+              <button className="btn btn-light">1k</button>
+              <button className="btn btn-light">1k</button>
+              <button className="btn btn-light">1k</button>
+              <button className="btn btn-light">1k</button>
+              <button className="btn btn-light">1k</button>
+              <button className="btn btn-light">1k</button>
+              <button className="btn btn-light">1k</button>
+              <button className="btn btn-light">1k</button>
+              <button className="btn btn-light">1k</button>
+              <button className="btn btn-light">1k</button>
+              <button className="btn btn-light">1k</button>
+            </div>
+
+            <div className="mybet_bluediv_buttom">
+              <div>
+                <button type="button" class="btn btn-info">
+                  Edit
+                </button>
+              </div>
+              <div>
+                <button type="button" class="btn btn-danger">
+                  Reset
+                </button>
+                <button type="button" class="btn btn-success">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="black_header mybet">My Bet</div>
+        </div>
+      </div>
     </div>
   );
 };
