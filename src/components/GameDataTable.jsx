@@ -1,10 +1,12 @@
 import React from "react";
 // import gameIcon from "../images/icons/game-icon.svg";
-import gameIcon from "../images/icon/game-icon.svg"
+import gameIcon from "../images/icon/game-icon.svg";
 import superOver2 from "../images/gameImg/superover2.jpg";
 import teen41 from "../images/gameImg/teen41.jpg";
+import { useNavigate } from "react-router-dom";
 
-const gameDataTable = () => {
+const GameDataTable = () => {
+  const navigate = useNavigate();
   const data = [
     {
       gamename: "Ball by ball",
@@ -79,7 +81,8 @@ const gameDataTable = () => {
       point6: "-",
     },
     {
-      gamename: "Perth Scorchers XI v Melbourne Stars XI / 05/09/2024 11:20:00 AM",
+      gamename:
+        "Perth Scorchers XI v Melbourne Stars XI / 05/09/2024 11:20:00 AM",
       green: true,
       live: true,
       game: true,
@@ -127,7 +130,8 @@ const gameDataTable = () => {
       point6: "1.08",
     },
     {
-      gamename: "Rajasthan Royals T10 v Sunrisers Hyderabad T10 / 05/09/2024 12:40:00 PM",
+      gamename:
+        "Rajasthan Royals T10 v Sunrisers Hyderabad T10 / 05/09/2024 12:40:00 PM",
       green: true,
       live: true,
       game: true,
@@ -139,7 +143,8 @@ const gameDataTable = () => {
       point6: "-",
     },
     {
-      gamename: "Gujarat Titans T10 v Kolkata Knight Riders T10 / 05/09/2024 12:50:00 PM",
+      gamename:
+        "Gujarat Titans T10 v Kolkata Knight Riders T10 / 05/09/2024 12:50:00 PM",
       green: true,
       live: true,
       game: true,
@@ -247,7 +252,8 @@ const gameDataTable = () => {
       point6: "-",
     },
     {
-      gamename: "Stellenbosch Kings v West Coast Blues / 05/09/2024 11:30:00 PM",
+      gamename:
+        "Stellenbosch Kings v West Coast Blues / 05/09/2024 11:30:00 PM",
       green: true,
       live: true,
       game: true,
@@ -259,7 +265,8 @@ const gameDataTable = () => {
       point6: "-",
     },
     {
-      gamename: "Antigua and Barbuda Falcons v Trinbago Knight Riders / 06/09/2024 04:30:00 AM",
+      gamename:
+        "Antigua and Barbuda Falcons v Trinbago Knight Riders / 06/09/2024 04:30:00 AM",
       green: true,
       live: true,
       game: true,
@@ -294,7 +301,7 @@ const gameDataTable = () => {
       point5: "-",
       point6: "-",
     },
-    
+
     {
       gamename: "Meerut Mavericks v Noida Super Kings / 06/09/2024 03:30:00 PM",
       green: true,
@@ -344,7 +351,8 @@ const gameDataTable = () => {
       point6: "-",
     },
     {
-      gamename: "St. Kitts and Nevis Patriots v Barbados Royals / 07/09/2024 04:30:00 AM",
+      gamename:
+        "St. Kitts and Nevis Patriots v Barbados Royals / 07/09/2024 04:30:00 AM",
       green: true,
       live: true,
       game: true,
@@ -355,7 +363,7 @@ const gameDataTable = () => {
       point5: "6.0",
       point6: "7.0",
     },
-    
+
     {
       gamename: "Ireland Women v England Women / 07/09/2024 03:30:00 PM",
       green: true,
@@ -403,7 +411,7 @@ const gameDataTable = () => {
       gameImage: require("../images/gameImg/superover2.jpg"),
       gameName: "Super Over 2",
     },
-    
+
     {
       gameImage: require("../images/gameImg/teen41.jpg"),
       gameName: "teen 41",
@@ -468,7 +476,6 @@ const gameDataTable = () => {
       gameImage: require("../images/gameImg/teen41.jpg"),
       gameName: "teen 41",
     },
-    
   ];
   return (
     <div>
@@ -488,7 +495,14 @@ const gameDataTable = () => {
               <div className="headBody">
                 <div className="game_left">
                   <div>
-                    <h4>{item?.gamename}</h4>
+                    <h4
+                    className="game_name"
+                      onClick={() => {
+                        navigate("/gamedetails");
+                      }}
+                    >
+                      {item?.gamename}
+                    </h4>
                   </div>
                   <div className="game_left_right">
                     <div className="icons_main_div">
@@ -548,4 +562,4 @@ const gameDataTable = () => {
   );
 };
 
-export default gameDataTable;
+export default GameDataTable;

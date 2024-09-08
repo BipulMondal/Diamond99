@@ -10,6 +10,7 @@ const Login = () => {
     password: "",
   };
   const [loginData, setLoginData] = useState(initial);
+  const [showPass, setShowPasswor] = useState(false);
   const navigate = useNavigate();
 
   const handleChnage = (e) => {
@@ -19,22 +20,44 @@ const Login = () => {
     }));
   };
 
+  const handleShow = () => {
+    setShowPasswor(!showPass);
+  };
+
+  const hanldeValidation = () => {
+    if (!loginData.username) {
+      toast.error("User Name Is required");
+      return false;
+    }
+    if (!loginData.password) {
+      toast.error("Password Is required");
+      return false;
+    }
+    if (loginData.password.length < 4 ) {
+      toast.error("Password length must be 4 digits or above");
+      return false;
+    }
+    return true;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let data = loginData;
-      let res = await requestHandler({
-        endpoint: "/account/login",
-        method: "POST",
-        body: data,
-      });
+      if (hanldeValidation()) {
+        let data = loginData;
+        let res = await requestHandler({
+          endpoint: "/login",
+          method: "POST",
+          body: data,
+        });
 
-      if (res && res.success) {
-        localStorage.setItem("token", res?.data?.accessToken);
-        toast.success(res?.message);
-        navigate("/marketanalysis");
-      } else {
-        toast.error(res?.message);
+        if (res && res.success) {
+          localStorage.setItem("token", res?.data?.accessToken);
+          toast.success(res?.message);
+          navigate("/");
+        } else {
+          toast.error(res?.message);
+        }
       }
     } catch (error) {
       toast.error(error.message);
@@ -74,7 +97,7 @@ const Login = () => {
               <div class="mb-3">
                 <div className="set_icon">
                   <input
-                    type="password"
+                    type={showPass ? "text" : "password"}
                     name="password"
                     value={loginData.password}
                     class="form-control"
@@ -83,7 +106,14 @@ const Login = () => {
                     onChange={(e) => handleChnage(e)}
                   />
                   <div className="icons">
-                    <i class="fas fa-key"></i>
+                    {!showPass ? (
+                      <i class="fas fa-key" onClick={() => handleShow()}></i>
+                    ) : (
+                      <i
+                        class="fa-solid fa-unlock-keyhole"
+                        onClick={() => handleShow()}
+                      ></i>
+                    )}
                   </div>
                 </div>
               </div>
@@ -98,9 +128,13 @@ const Login = () => {
 
               <small class="recaptchaTerms mt-1">
                 This site is protected by reCAPTCHA and the Google
-                <a href="https://policies.google.com/privacy">Privacy Policy</a>{" "}
+                <a href="https://policies.google.com/privacy">
+                  Privacy Policy
+                </a>{" "}
                 and
-                <a href="https://policies.google.com/terms">Terms of Service</a>{" "}
+                <a href="https://policies.google.com/terms">
+                  Terms of Service
+                </a>{" "}
                 apply.
               </small>
             </form>
