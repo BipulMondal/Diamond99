@@ -73,13 +73,13 @@
   width: 17%;
 }
 .lighterblue {
-  background-color: rgb(137 197 211);
+  background-color: #72bbef7f;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .lightblue {
-  background-color: rgb(107 175 191);
+  background-color: #72bbefbf ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,21 +93,21 @@
   cursor: pointer;
 }
 .lighterpink {
-  background-color: #ebdbe0;
+  background-color: #faa9ba7f ;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 .lightpink {
-  background-color: #d9b3bf;
+  background-color: #faa9babf ;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 .darkpink {
-  background-color: #d99fb2;
+  background-color: #faa9ba ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,6 +154,13 @@
   margin-bottom: 3px;
 }
 .place_bet_head {
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.my_bet_head {
   font-size: 14px;
   font-weight: bold;
   display: flex;
@@ -249,4 +256,21 @@
 }
 .main_edit_modal {
   width: 100%;
+  margin-top: 10px;
 }
+.edit_price_text {
+  font-weight: bold;
+}
+
+.update_price {
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  color: white;
+  background-color: #0088cc;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  margin-left: 20px;
+}
+/*   */

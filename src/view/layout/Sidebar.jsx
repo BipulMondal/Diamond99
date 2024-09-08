@@ -25,7 +25,7 @@ const Sidebar = () => {
                 aria-expanded={openSection === "cricket"}
                 aria-controls="collapseSixtt"
               >
-                Cricket
+                Cricket <i class="fas fa-chevron-down ms-1 drop_icon_sidebar"></i>
               </a>
             </div>
           </div>
@@ -44,7 +44,7 @@ const Sidebar = () => {
                     to="/manageAdditionalStuff"
                     className="metismenu-link_baby"
                   >
-                    cricket result 
+                    cricket result  
                   </NavLink>
                 </li>
               </ul>
@@ -66,7 +66,7 @@ const Sidebar = () => {
                 aria-expanded={openSection === "football"}
                 aria-controls="collapseSixtt"
               >
-              Football
+              Football <i class="fas fa-chevron-down ms-1 drop_icon_sidebar"></i>
               </a>
             </div>
           </div>
@@ -85,7 +85,7 @@ const Sidebar = () => {
                     to="/manageAdditionalStuff"
                     className="metismenu-link_baby"
                   >
-                   football result
+                   football result 
                   </NavLink>
                 </li>
               </ul>
@@ -107,7 +107,7 @@ const Sidebar = () => {
                 aria-expanded={openSection === "Tennis"}
                 aria-controls="collapseSixtt"
               >
-                Tennis
+                Tennis <i class="fas fa-chevron-down ms-1 drop_icon_sidebar"></i>
               </a>
             </div>
           </div>

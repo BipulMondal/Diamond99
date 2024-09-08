@@ -40,7 +40,10 @@ const Header = () => {
               <i class="fas fa-chevron-down ms-1"></i>
             </a>
 
-            <ul class="dropdown-menu own_dropdown" aria-labelledby="dropdownMenuButton">
+            <ul
+              class="dropdown-menu own_dropdown"
+              aria-labelledby="dropdownMenuButton"
+            >
               <li class="dropdown-item">
                 <a href="/accountstatement">Account Statement</a>
               </li>
@@ -69,8 +72,14 @@ const Header = () => {
                 </div>
               </li>
               <hr class="dropdown-divider" role="separator" />
-              <li class="dropdown-item">
-                <a href="#">Sign Out</a>
+              <li
+                class="dropdown-item"
+                onClick={() => {
+                  localStorage.clear();
+                  window.location.reload();
+                }}
+              >
+                Sign Out
               </li>
             </ul>
           </div>
@@ -78,27 +87,39 @@ const Header = () => {
       </div>
       <div className="header_list">
         <ul>
-          <li className="bold"
-           onClick={() => {
-            navigate("/")
-          }}
-          >HOME</li>
+          <li
+            className="bold"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            HOME
+          </li>
           <li className="bold">LOTTERY</li>
-          <li className="bold" 
-               onClick={() => {
-                navigate("/gamedetails")
-              }}
-          >CRICKET</li>
-          <li className="bold" 
-               onClick={() => {
-                navigate("/gamedetails")
-              }}
-          >FOOTBALL</li>
-          <li className="bold" 
-               onClick={() => {
-                navigate("/gamedetails")
-              }}
-          >TENNIS</li>
+          <li
+            className="bold"
+            onClick={() => {
+              navigate("/gamedetails");
+            }}
+          >
+            CRICKET
+          </li>
+          <li
+            className="bold"
+            onClick={() => {
+              navigate("/gamedetails");
+            }}
+          >
+            FOOTBALL
+          </li>
+          <li
+            className="bold"
+            onClick={() => {
+              navigate("/gamedetails");
+            }}
+          >
+            TENNIS
+          </li>
         </ul>
       </div>
     </>

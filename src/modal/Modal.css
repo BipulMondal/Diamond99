@@ -1,9 +1,9 @@
 .modal-open .modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity */
-  }
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity */
+}
 
-  /*********** home page modal css  ******************/
-  /* Full-screen overlay to darken the background */
+/*********** home page modal css  ******************/
+/* Full-screen overlay to darken the background */
 .custom-modal-overlay {
   position: fixed;
   top: 0;
@@ -44,6 +44,17 @@
   display: flex;
   justify-content: flex-end;
   background-color: #0088cc;
+}
+.edit-modal-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0088cc;
+  color: white;
+}
+.edit-modal-header h3 {
+  font-size: 21px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 /* Close button */

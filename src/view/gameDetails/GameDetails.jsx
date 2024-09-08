@@ -14,8 +14,6 @@ const GameDetails = () => {
     setChangeColor(color);
   };
 
-  console.log("betButtonsData", betButtonsData);
-
   const getButtonsData = async () => {
     let token = localStorage.getItem("token");
     try {
@@ -128,11 +126,21 @@ const GameDetails = () => {
               <div className="bookmaker_body_right">
                 <div className="body_right lighterblue">-</div>
                 <div className="body_right lightblue">-</div>
-                <div className="body_right darkblue" onClick={openPlaceBet}>
-                  125
+                <div
+                  className="body_right darkblue"
+                  onClick={() => {
+                    openPlaceBet("blue");
+                  }}
+                >
+                  76
                 </div>
-                <div className="body_right darkpink" onClick={openPlaceBet}>
-                  131
+                <div
+                  className="body_right darkpink"
+                  onClick={() => {
+                    openPlaceBet("pink");
+                  }}
+                >
+                  80
                 </div>
                 <div className="body_right lightpink">-</div>
                 <div className="body_right lighterpink"> -</div>
@@ -165,10 +173,20 @@ const GameDetails = () => {
                     <p>15 over run GL</p>
                   </div>
                   <div className="bookmaker_body_right">
-                    <div className="body_right darkblue" onClick={openPlaceBet}>
+                    <div
+                      className="body_right darkblue"
+                      onClick={() => {
+                        openPlaceBet("blue");
+                      }}
+                    >
                       76
                     </div>
-                    <div className="body_right darkpink" onClick={openPlaceBet}>
+                    <div
+                      className="body_right darkpink"
+                      onClick={() => {
+                        openPlaceBet("pink");
+                      }}
+                    >
                       80
                     </div>
                     <div className="body_right min_max_bet">
@@ -182,11 +200,21 @@ const GameDetails = () => {
                     <p>11 over run GL</p>
                   </div>
                   <div className="bookmaker_body_right">
-                    <div className="body_right darkblue" onClick={openPlaceBet}>
-                      125
+                    <div
+                      className="body_right darkblue"
+                      onClick={() => {
+                        openPlaceBet("blue");
+                      }}
+                    >
+                      76
                     </div>
-                    <div className="body_right darkpink" onClick={openPlaceBet}>
-                      131
+                    <div
+                      className="body_right darkpink"
+                      onClick={() => {
+                        openPlaceBet("pink");
+                      }}
+                    >
+                      80
                     </div>
                     <div className="body_right min_max_bet">
                       <p>Min 100</p>
@@ -200,11 +228,21 @@ const GameDetails = () => {
                     <p>12 over run GL</p>
                   </div>
                   <div className="bookmaker_body_right">
-                    <div className="body_right darkblue" onClick={openPlaceBet}>
-                      125
+                    <div
+                      className="body_right darkblue"
+                      onClick={() => {
+                        openPlaceBet("blue");
+                      }}
+                    >
+                      76
                     </div>
-                    <div className="body_right darkpink" onClick={openPlaceBet}>
-                      131
+                    <div
+                      className="body_right darkpink"
+                      onClick={() => {
+                        openPlaceBet("pink");
+                      }}
+                    >
+                      80
                     </div>
                     <div className="body_right min_max_bet">
                       <p>Min 100</p>
@@ -234,8 +272,22 @@ const GameDetails = () => {
                     <p>620</p>
                   </div>
                   <div className="bookmaker_body_right">
-                    <div className="body_right darkblue">76</div>
-                    <div className="body_right darkpink">80</div>
+                    <div
+                      className="body_right darkblue"
+                      onClick={() => {
+                        openPlaceBet("blue");
+                      }}
+                    >
+                      76
+                    </div>
+                    <div
+                      className="body_right darkpink"
+                      onClick={() => {
+                        openPlaceBet("pink");
+                      }}
+                    >
+                      80
+                    </div>
                     <div className="body_right min_max_bet">
                       <p>Min 100</p>
                       <p>Max 2L</p>
@@ -248,8 +300,22 @@ const GameDetails = () => {
                     <p>-1,000</p>
                   </div>
                   <div className="bookmaker_body_right">
-                    <div className="body_right darkblue">125</div>
-                    <div className="body_right darkpink">131</div>
+                    <div
+                      className="body_right darkblue"
+                      onClick={() => {
+                        openPlaceBet("blue");
+                      }}
+                    >
+                      76
+                    </div>
+                    <div
+                      className="body_right darkpink"
+                      onClick={() => {
+                        openPlaceBet("pink");
+                      }}
+                    >
+                      80
+                    </div>
                     <div className="body_right min_max_bet">
                       <p>Min 100</p>
                       <p>Max 2L</p>
@@ -280,8 +346,22 @@ const GameDetails = () => {
               <p>only 9 over</p>
             </div>
             <div className="over_body_right">
-              <div className="body_right darkblue">125</div>
-              <div className="body_right darkpink">131</div>
+              <div
+                className="body_right darkblue"
+                onClick={() => {
+                  openPlaceBet("blue");
+                }}
+              >
+                76
+              </div>
+              <div
+                className="body_right darkpink"
+                onClick={() => {
+                  openPlaceBet("pink");
+                }}
+              >
+                80
+              </div>
               <div className="body_right min_max_bet">
                 <p>Min 100</p>
                 <p>Max 2L</p>
@@ -302,11 +382,21 @@ const GameDetails = () => {
                     <p>15 over run GL</p>
                   </div>
                   <div className="bookmaker_body_right">
-                    <div className="body_right darkblue" onClick={openPlaceBet}>
+                    <div
+                      className="body_right darkblue"
+                      onClick={() => {
+                        openPlaceBet("blue");
+                      }}
+                    >
                       76
                     </div>
-                    <div className="body_right darkblue" onClick={openPlaceBet}>
-                      80
+                    <div
+                      className="body_right darkblue"
+                      onClick={() => {
+                        openPlaceBet("blue");
+                      }}
+                    >
+                      76
                     </div>
                     <div className="body_right min_max_bet">
                       <p>Min 100</p>
@@ -319,11 +409,21 @@ const GameDetails = () => {
                     <p>11 over run GL</p>
                   </div>
                   <div className="bookmaker_body_right">
-                    <div className="body_right darkblue" onClick={openPlaceBet}>
-                      125
+                    <div
+                      className="body_right darkblue"
+                      onClick={() => {
+                        openPlaceBet("blue");
+                      }}
+                    >
+                      76
                     </div>
-                    <div className="body_right darkblue" onClick={openPlaceBet}>
-                      131
+                    <div
+                      className="body_right darkblue"
+                      onClick={() => {
+                        openPlaceBet("blue");
+                      }}
+                    >
+                      76
                     </div>
                     <div className="body_right min_max_bet">
                       <p>Min 100</p>
@@ -343,8 +443,22 @@ const GameDetails = () => {
                     <p>620</p>
                   </div>
                   <div className="bookmaker_body_right">
-                    <div className="body_right darkblue">76</div>
-                    <div className="body_right darkblue">80</div>
+                    <div
+                      className="body_right darkblue"
+                      onClick={() => {
+                        openPlaceBet("blue");
+                      }}
+                    >
+                      76
+                    </div>
+                    <div
+                      className="body_right darkblue"
+                      onClick={() => {
+                        openPlaceBet("blue");
+                      }}
+                    >
+                      76
+                    </div>
                     <div className="body_right min_max_bet">
                       <p>Min 100</p>
                       <p>Max 2L</p>
@@ -535,8 +649,18 @@ const GameDetails = () => {
           </>
         )}
         <div className="black_header mybet">My Bet</div>
+        <div className="my_bet_head">
+          <p>Matched bet</p>
+          <p>Odds</p>
+          <p>Stake</p>
+        </div>
       </div>
-      {showModal && <EditButtonModal setShowModal={setShowModal}/>}
+      {showModal && (
+        <EditButtonModal
+          setShowModal={setShowModal}
+          buttonsData={betButtonsData}
+        />
+      )}
     </div>
   );
 };

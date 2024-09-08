@@ -587,4 +587,7 @@ a.demo:hover {
 .game_name {
   cursor: pointer;
 }
-
+.drop_icon_sidebar {
+  float: right;
+  margin-right: 10px;
+}

@@ -14,7 +14,7 @@ const Dashboard = () => {
     <>
       <HomePageModal />
       <div className="home_container">
-        <div className="home_top_container">
+        {/* <div className="home_top_container">
           <div className="container_1">
             <h6 className="container_1_text">
               <i class="d-icon me-1 icon-40"></i>USA - Presidential Election
@@ -32,7 +32,7 @@ const Dashboard = () => {
           <div className="container_1">
             <h6 className="container_1_text">Serbia v Spain</h6>
           </div>
-        </div>
+        </div> */}
         <div className="home_second_container">
           <ul className="nav nav-pills">
             <li className="nav-item">
