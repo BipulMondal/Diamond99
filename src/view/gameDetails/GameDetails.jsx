@@ -214,26 +214,25 @@ const GameDetails = () => {
           </div>
         </div>
         <div className="black_header">
-          <p>Over By Over</p>
+          <p>Over BY Over</p>
         </div>
-        <div>
-          <div className="normal_body_single">
-            <div className="normal_body_left">
+        <div className="over_body_main">
+          <div className="over_body_single">
+            <div className="over_body_left">
               <p></p>
             </div>
-            <div className="normal_body_right">
+            <div className="over_body_right">
               <div className="body_right darkblue">No</div>
               <div className="body_right darkpink">Yes</div>
               <div className="body_right"></div>
             </div>
           </div>
 
-          <div className="normal_body_single">
-            <div className="">
-              <p>Gorakhpur Lions</p>
-              <p>-1,000</p>
+          <div className="over_body_single">
+            <div className="over_body_left">
+              <p>only 9 over</p>
             </div>
-            <div className="bookmaker_body_right">
+            <div className="over_body_right">
               <div className="body_right darkblue">125</div>
               <div className="body_right darkpink">131</div>
               <div className="body_right min_max_bet">
@@ -244,7 +243,7 @@ const GameDetails = () => {
           </div>
         </div>
         <div className="black_header">
-          <p>Over By Over</p>
+          <p>Odd even</p>
         </div>
 
         <div className="normal_main_body">
@@ -310,196 +309,69 @@ const GameDetails = () => {
           </div>
         </div>
         <div className="black_header">
-          <p>Over By Over</p>
+          <p>2Nd ii nn</p>
         </div>
-        <div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
+        <div className="four_body">
+          <div className="four_body_single">
+            <div className="four_body_left">
               <p>Lucknow Falcons</p>
               <p>620</p>
             </div>
-            <div className="bookmaker_body_right">
+            <div className="four_body_right">
               <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
             </div>
           </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
+          <div className="four_body_single">
+            <div className="four_body_left">
               <p>Lucknow Falcons</p>
               <p>620</p>
             </div>
-            <div className="bookmaker_body_right">
+            <div className="four_body_right">
               <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
             </div>
           </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
+          <div className="four_body_single">
+            <div className="four_body_left">
               <p>Lucknow Falcons</p>
               <p>620</p>
             </div>
-            <div className="bookmaker_body_right">
+            <div className="four_body_right">
               <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
             </div>
           </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
+          <div className="four_body_single">
+            <div className="four_body_left">
               <p>Lucknow Falcons</p>
               <p>620</p>
             </div>
-            <div className="bookmaker_body_right">
+            <div className="four_body_right">
               <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
             </div>
           </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
+          <div className="four_body_single">
+            <div className="four_body_left">
               <p>Lucknow Falcons</p>
               <p>620</p>
             </div>
-            <div className="bookmaker_body_right">
+            <div className="four_body_right">
               <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
             </div>
           </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
+          <div className="four_body_single">
+            <div className="four_body_left">
               <p>Lucknow Falcons</p>
               <p>620</p>
             </div>
-            <div className="bookmaker_body_right">
-              <div className="body_right darkblue">76</div>
+            <div className="four_body_right">
               <div className="body_right darkblue">80</div>
             </div>
           </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
+          <div className="four_body_single">
+            <div className="four_body_left">
               <p>Lucknow Falcons</p>
               <p>620</p>
             </div>
-            <div className="bookmaker_body_right">
-              <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
-            </div>
-          </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
-              <p>Lucknow Falcons</p>
-              <p>620</p>
-            </div>
-            <div className="bookmaker_body_right">
-              <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
-            </div>
-          </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
-              <p>Lucknow Falcons</p>
-              <p>620</p>
-            </div>
-            <div className="bookmaker_body_right">
-              <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
-            </div>
-          </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
-              <p>Lucknow Falcons</p>
-              <p>620</p>
-            </div>
-            <div className="bookmaker_body_right">
-              <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
-            </div>
-          </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
-              <p>Lucknow Falcons</p>
-              <p>620</p>
-            </div>
-            <div className="bookmaker_body_right">
-              <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
-            </div>
-          </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
-              <p>Lucknow Falcons</p>
-              <p>620</p>
-            </div>
-            <div className="bookmaker_body_right">
-              <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
-            </div>
-          </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
-              <p>Lucknow Falcons</p>
-              <p>620</p>
-            </div>
-            <div className="bookmaker_body_right">
-              <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
-            </div>
-          </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
-              <p>Lucknow Falcons</p>
-              <p>620</p>
-            </div>
-            <div className="bookmaker_body_right">
-              <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
-            </div>
-          </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
-              <p>Lucknow Falcons</p>
-              <p>620</p>
-            </div>
-            <div className="bookmaker_body_right">
-              <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
-            </div>
-          </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
-              <p>Lucknow Falcons</p>
-              <p>620</p>
-            </div>
-            <div className="bookmaker_body_right">
-              <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
-            </div>
-          </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
-              <p>Lucknow Falcons</p>
-              <p>620</p>
-            </div>
-            <div className="bookmaker_body_right">
-              <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
-            </div>
-          </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
-              <p>Lucknow Falcons</p>
-              <p>620</p>
-            </div>
-            <div className="bookmaker_body_right">
-              <div className="body_right darkblue">76</div>
-              <div className="body_right darkblue">80</div>
-            </div>
-          </div>
-          <div className="normal_body_single">
-            <div className="bookmaker_body_left">
-              
-              <p>620</p>
-            </div>
-            <div className="bookmaker_body_right">
-              <div className="body_right darkblue">76</div>
+            <div className="four_body_right">
               <div className="body_right darkblue">80</div>
             </div>
           </div>
@@ -551,14 +423,27 @@ const GameDetails = () => {
                 <p>10 over Fun FL</p>
                 <p>-90</p>
               </div>
-              <div className="">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <button type="button" class="btn btn-light"></button>
+              <div class="placebet_input_main">
+                <div>
+                  <input
+                    type="number"
+                    class="placebet_input"
+                    id="exampleFormControlInput1"
+                  />
+                  <div class="spinner-buttons input-group-btn btn-group-vertical">
+                    <button class=" up_arow">
+                      <i class="fa fa-angle-up"></i>
+                    </button>
+                    <button class=" up_arow">
+                      <i class="fa fa-angle-down"></i>
+                    </button>
+                  </div>
+                </div>
+                <input
+                  type="number"
+                  class="placebet_input"
+                  id="exampleFormControlInput1"
+                />
               </div>
 
               <div>
@@ -566,8 +451,6 @@ const GameDetails = () => {
               </div>
             </div>
             <div className="place_button">
-              <button className="btn btn-light">1k</button>
-              <button className="btn btn-light">1k</button>
               <button className="btn btn-light">1k</button>
               <button className="btn btn-light">1k</button>
               <button className="btn btn-light">1k</button>

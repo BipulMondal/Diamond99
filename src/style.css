@@ -7,8 +7,7 @@
   color: white;
   padding: 1px 10px;
   height: 25px;
-  margin-top:7px;
-  
+  margin-top: 7px;
 }
 .game_details_main {
   display: flex;
@@ -114,7 +113,7 @@
 
 .normal_main_body {
   display: flex;
-  gap: 105px;
+  gap: 25px;
 }
 .normal_main_left {
   width: 50%;
@@ -126,6 +125,7 @@
 .bookmaker_body_single {
   width: 100%;
   display: flex;
+  border-bottom: 1px solid gray;
 }
 .normal_body_left {
   width: 55%;
@@ -135,7 +135,8 @@
   display: flex;
 }
 .body_right {
-  width: 33%;
+  /* width: 33%; */
+  width: 100%;
 }
 .min_max_bet {
   text-align: center;
@@ -177,12 +178,53 @@
   gap: 10px;
   padding: 12px;
 }
-.place_button button{
-  width: 50px;
+.place_button button {
+  width: 70px;
 }
 .mybet_bluediv_buttom {
   display: flex;
   justify-content: space-around;
   padding: 6px;
   margin-bottom: 5px;
+}
+.placebet_input {
+  width: 66px;
+  border: none;
+  outline: none;
+  height: 29px;
+}
+.placebet_input_main {
+  display: flex;
+  gap: 6px;
+  height:36px;
+}
+.up_arow {
+  width: 12px;
+  height: 14px;
+  font-size: 10px;
+  border: none;
+  outline: none;
+}
+.over_body_single {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+.over_body_left {
+  width: 78%;
+}
+.over_body_right {
+  width: 22%;
+  display: flex;
+}
+.four_body_single {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.four_body_right {
+  width: 10%;
+}
+.four_body_left {
+  width: 90%;
 }

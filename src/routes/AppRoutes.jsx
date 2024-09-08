@@ -4,6 +4,7 @@ import Login from "../view/auth/Login";
 import Main from "../view/layout/main/Main";
 import Dashboard from "../view/Dashboard/Dashboard";
 import GameDetails from "../view/gameDetails/GameDetails";
+import Accountstatement from "../view/accountstatement/Accountstatement";
 
 
 function AppRoutes() {
@@ -30,6 +31,7 @@ function AppRoutes() {
       <Route path="/" element={<Main />}>
         <Route index element={<Dashboard />} />
         <Route path="gamedetails" element={<GameDetails />} />
+        <Route path="accountstatement" element={<Accountstatement />} />
     
       </Route>
       <Route path="/login" element={<Login />} />
