@@ -78,11 +78,27 @@ const Header = () => {
       </div>
       <div className="header_list">
         <ul>
-          <li className="bold">HOME</li>
+          <li className="bold"
+           onClick={() => {
+            navigate("/")
+          }}
+          >HOME</li>
           <li className="bold">LOTTERY</li>
-          <li className="bold">CRICKET</li>
-          <li className="bold">FOOTBALL</li>
-          <li className="bold">TENNIS</li>
+          <li className="bold" 
+               onClick={() => {
+                navigate("/gamedetails")
+              }}
+          >CRICKET</li>
+          <li className="bold" 
+               onClick={() => {
+                navigate("/gamedetails")
+              }}
+          >FOOTBALL</li>
+          <li className="bold" 
+               onClick={() => {
+                navigate("/gamedetails")
+              }}
+          >TENNIS</li>
         </ul>
       </div>
     </>
