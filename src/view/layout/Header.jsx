@@ -29,7 +29,7 @@ const Header = () => {
           </div>
           <div class="dropdown ms-3">
             <a
-              class="demo d-xl-block dropdown-toggle"
+              class="demo d-xl-block"
               id="dropdownMenuButton"
               href="#"
               data-toggle="dropdown"
@@ -40,15 +40,15 @@ const Header = () => {
               <i class="fas fa-chevron-down ms-1"></i>
             </a>
 
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <ul class="dropdown-menu own_dropdown" aria-labelledby="dropdownMenuButton">
               <li class="dropdown-item">
-                <a href="/account-statement">Account Statement</a>
+                <a href="/accountstatement">Account Statement</a>
               </li>
               <li class="dropdown-item">
-                <a href="/current-bet">Current Bet</a>
+                <a href="#">Current Bet</a>
               </li>
               <li class="dropdown-item">
-                <a href="/casino-results">Casino Results</a>
+                <a href="#">Casino Results</a>
               </li>
               <li class="dropdown-item">
                 <a href="#">Set Button Values</a>
