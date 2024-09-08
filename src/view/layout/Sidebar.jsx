@@ -126,7 +126,7 @@ const Sidebar = () => {
                     to="/manageAdditionalStuff"
                     className="metismenu-link_baby"
                   >
-                   tennis result
+                   tennis result1
                   </NavLink>
                 </li>
               </ul>
