@@ -21,7 +21,7 @@
 /* Modal container with smooth transition from top to center */
 .custom-modal {
   position: relative;
-  background-color: #0088cc;
+  background-color: #ffffff;
   width: 650px;
   max-width: 90%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -43,6 +43,7 @@
 .custom-modal-header {
   display: flex;
   justify-content: flex-end;
+  background-color: #0088cc;
 }
 
 /* Close button */
@@ -57,6 +58,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.edit-modal-body {
+  padding: 10px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .modal-image {

@@ -1,12 +1,41 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { requestHandler } from "../../utils/requestHandler";
+import EditButtonModal from "../../modal/EditButtonModal";
 
 const GameDetails = () => {
   const [showVideo, setShowVideo] = useState(false);
-  const [showPlaceBet, setPlaceBet] = useState(true);
+  const [showPlaceBet, setPlaceBet] = useState(false);
+  const [changeColor, setChangeColor] = useState("");
+  const [betButtonsData, setBetButtonsData] = useState([]);
+  const [showModal, setShowModal] = useState(false);
 
-  const openPlaceBet = () => {
+  const openPlaceBet = (color) => {
     setPlaceBet(true);
+    setChangeColor(color);
   };
+
+  console.log("betButtonsData", betButtonsData);
+
+  const getButtonsData = async () => {
+    let token = localStorage.getItem("token");
+    try {
+      let res = await requestHandler({
+        endpoint: "/user-buttons",
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (res && res.success) {
+        setBetButtonsData(res?.data?.[0]);
+      }
+    } catch (error) {}
+  };
+
+  useEffect(() => {
+    getButtonsData();
+  }, []);
 
   return (
     <div className="game_details_main">
@@ -71,8 +100,22 @@ const GameDetails = () => {
               <div className="bookmaker_body_right">
                 <div className="body_right lighterblue">-</div>
                 <div className="body_right lightblue">-</div>
-                <div className="body_right darkblue">76</div>
-                <div className="body_right darkpink">80</div>
+                <div
+                  className="body_right darkblue"
+                  onClick={() => {
+                    openPlaceBet("blue");
+                  }}
+                >
+                  76
+                </div>
+                <div
+                  className="body_right darkpink"
+                  onClick={() => {
+                    openPlaceBet("pink");
+                  }}
+                >
+                  80
+                </div>
                 <div className="body_right lightpink">-</div>
                 <div className="body_right lighterpink"> -</div>
               </div>
@@ -85,8 +128,12 @@ const GameDetails = () => {
               <div className="bookmaker_body_right">
                 <div className="body_right lighterblue">-</div>
                 <div className="body_right lightblue">-</div>
-                <div className="body_right darkblue">125</div>
-                <div className="body_right darkpink">131</div>
+                <div className="body_right darkblue" onClick={openPlaceBet}>
+                  125
+                </div>
+                <div className="body_right darkpink" onClick={openPlaceBet}>
+                  131
+                </div>
                 <div className="body_right lightpink">-</div>
                 <div className="body_right lighterpink"> -</div>
               </div>
@@ -399,89 +446,97 @@ const GameDetails = () => {
           )}
         </div>
         {showPlaceBet && (
-          <div className="place_bet_main">
-            <div className="black_header place_bet">Place Bet</div>
-            <div className="place_bet_body">
-              <div className="place_bet_head">
-                <div className="place_header">
-                  <p>(Bet for)</p>
-                  <p>Odds</p>
-                </div>
-                <div className="place_header">
-                  <p>Stake</p>
-                  <p>Profit</p>
+          <>
+            <div className="place_bet_main">
+              <div className="black_header place_bet">Place Bet</div>
+              <div className="place_bet_body">
+                <div className="place_bet_head">
+                  <div className="place_header">
+                    <p>(Bet for)</p>
+                    <p>Odds</p>
+                  </div>
+                  <div className="place_header">
+                    <p>Stake</p>
+                    <p>Profit</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        )}
-        <div className="mybet_main">
-          <div className="black_header mybet">My Bet</div>
-          <div className="mybet_bluediv">
-            <div className="mybet_bluediv_up">
-              <div>
-                <p>10 over Fun FL</p>
-                <p>-90</p>
-              </div>
-              <div class="placebet_input_main">
-                <div>
-                  <input
-                    type="number"
-                    class="placebet_input"
-                    id="exampleFormControlInput1"
-                  />
-                  <div class="spinner-buttons input-group-btn btn-group-vertical">
-                    <button class=" up_arow">
-                      <i class="fa fa-angle-up"></i>
+
+            <div className="mybet_main">
+              {/* <div className="mybet_bluediv"> */}
+              <div
+                className={`${changeColor === "blue" ? "mybet_bluediv" : ""} ${
+                  changeColor === "pink" ? "mybet_pinkdiv" : ""
+                }`}
+              >
+                {" "}
+                <div className="mybet_bluediv_up">
+                  <div className="bet_for_game_name">
+                    <p>Kashi Rudras</p>
+                  </div>
+                  <div class="placebet_input_main">
+                    <div className="left_with_arrow">
+                      <input
+                        type="number"
+                        class="placebet_input"
+                        id="exampleFormControlInput1"
+                      />
+                      <div class="spinner-buttons input-group-btn btn-group-vertical">
+                        <button class=" up_arow">
+                          <i class="fa fa-angle-up"></i>
+                        </button>
+                        <button class=" up_arow">
+                          <i class="fa fa-angle-down"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <input
+                      type="number"
+                      class="placebet_input"
+                      id="exampleFormControlInput1"
+                    />
+                  </div>
+
+                  <div>
+                    <p>0</p>
+                  </div>
+                </div>
+                <div className="place_button">
+                  {betButtonsData &&
+                    betButtonsData?.bettingButtons?.map((item) => {
+                      console.log("map_item", item);
+                      return (
+                        <button className="btn btn-light">{item.tag}</button>
+                      );
+                    })}
+                </div>
+                <div className="mybet_bluediv_buttom">
+                  <div>
+                    <button
+                      type="button"
+                      class="btn btn-info"
+                      onClick={() => setShowModal(true)}
+                    >
+                      Edit
                     </button>
-                    <button class=" up_arow">
-                      <i class="fa fa-angle-down"></i>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-danger">
+                      Reset
+                    </button>
+                    <button type="button" class="btn btn-success">
+                      Submit
                     </button>
                   </div>
                 </div>
-                <input
-                  type="number"
-                  class="placebet_input"
-                  id="exampleFormControlInput1"
-                />
-              </div>
-
-              <div>
-                <p>0</p>
               </div>
             </div>
-            <div className="place_button">
-              <button className="btn btn-light">1k</button>
-              <button className="btn btn-light">1k</button>
-              <button className="btn btn-light">1k</button>
-              <button className="btn btn-light">1k</button>
-              <button className="btn btn-light">1k</button>
-              <button className="btn btn-light">1k</button>
-              <button className="btn btn-light">1k</button>
-              <button className="btn btn-light">1k</button>
-              <button className="btn btn-light">1k</button>
-              <button className="btn btn-light">1k</button>
-            </div>
-
-            <div className="mybet_bluediv_buttom">
-              <div>
-                <button type="button" class="btn btn-info">
-                  Edit
-                </button>
-              </div>
-              <div>
-                <button type="button" class="btn btn-danger">
-                  Reset
-                </button>
-                <button type="button" class="btn btn-success">
-                  Submit
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="black_header mybet">My Bet</div>
-        </div>
+          </>
+        )}
+        <div className="black_header mybet">My Bet</div>
       </div>
+      {showModal && <EditButtonModal setShowModal={setShowModal}/>}
     </div>
   );
 };

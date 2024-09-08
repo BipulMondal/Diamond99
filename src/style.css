@@ -23,6 +23,9 @@
 }
 .game_details_main_right {
   width: 30%;
+  position: sticky;
+  top: 0;
+  height: 100%;
 }
 .pitch_background {
   background-image: url("./images/cricketpitch.png");
@@ -33,7 +36,7 @@
 .circle_blue_ball {
   height: 30px;
   width: 30px;
-  background-color: blue;
+  background-color: #08c;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -83,7 +86,7 @@
 }
 
 .darkblue {
-  background-color: #46c5cb;
+  background-color: #72bbef;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,7 +145,7 @@
   text-align: center;
   font-size: 10px;
   font-weight: bold;
-  color: #46c5cb;
+  color: #72bbef;
 }
 .live_match,
 .place_bet,
@@ -151,7 +154,7 @@
   margin-bottom: 3px;
 }
 .place_bet_head {
-  font-size: 10px;
+  font-size: 14px;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -163,7 +166,10 @@
   justify-content: space-between;
 }
 .mybet_bluediv {
-  background-color: #46c5cb;
+  background-color: #72bbef;
+}
+.mybet_pinkdiv {
+  background-color: #faa9ba;
 }
 .mybet_bluediv_up {
   display: flex;
@@ -196,7 +202,11 @@
 .placebet_input_main {
   display: flex;
   gap: 6px;
-  height:36px;
+  height: 36px;
+}
+.left_with_arrow {
+  height: 30px;
+  background-color: white;
 }
 .up_arow {
   width: 12px;
@@ -204,6 +214,7 @@
   font-size: 10px;
   border: none;
   outline: none;
+  background-color: #cccccc;
 }
 .over_body_single {
   display: flex;
@@ -227,4 +238,15 @@
 }
 .four_body_left {
   width: 90%;
+}
+.btn-group-vertical {
+  vertical-align: bottom;
+}
+.bet_for_game_name {
+  width: 20px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.main_edit_modal {
+  width: 100%;
 }

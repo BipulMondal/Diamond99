@@ -488,6 +488,9 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 75px;
   cursor: pointer;
 }
+.demo :hover {
+  color: white !important;
+}
 .set_icon {
   position: relative;
 }
@@ -502,4 +505,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .hr_white {
   background-color: white;
+}
+.game_name {
+  cursor: pointer;
 }
