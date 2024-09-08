@@ -27,57 +27,49 @@ const Header = () => {
             <p className="header_blnc">Blance:1500</p>
             <p className="header_blnc">Exp:0</p>
           </div>
-          <div>
+          <div class="dropdown ms-3">
             <a
-              class="demo ms-3 d-none d-xl-block dropdown-toggle"
-              id="react-aria3807262034-2"
+              class="demo d-xl-block dropdown-toggle"
+              id="dropdownMenuButton"
+              href="#"
+              data-toggle="dropdown"
+              aria-haspopup="true"
               aria-expanded="false"
             >
-              Demo<i class="fas fa-chevron-down ms-1"></i>
+              Demo
+              <i class="fas fa-chevron-down ms-1"></i>
             </a>
 
-            <ul
-                x-placement="bottom-end"
-                aria-labelledby="react-aria3807262034-6"
-                class="dropdown-menu"
-                data-popper-reference-hidden="false"
-                data-popper-escaped="false"
-                data-popper-placement="bottom-end"
-              style={{
-                position: "absolute",
-                inset: "0px 0px auto auto",
-                transform: "translate(0px, 21px)",
-              }}
-            >
-              <li className="dropdown-item">
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li class="dropdown-item">
                 <a href="/account-statement">Account Statement</a>
               </li>
-              <li className="dropdown-item">
+              <li class="dropdown-item">
                 <a href="/current-bet">Current Bet</a>
               </li>
-              <li className="dropdown-item">
+              <li class="dropdown-item">
                 <a href="/casino-results">Casino Results</a>
               </li>
-              <li className="dropdown-item">
+              <li class="dropdown-item">
                 <a href="#">Set Button Values</a>
               </li>
-              <li className="dropdown-item d-xl-none">
+              <li class="dropdown-item d-xl-none">
                 <a href="#">Rules</a>
               </li>
-              <li className="dropdown-item d-xl-none">
+              <li class="dropdown-item d-xl-none">
                 Balance
-                <div className="form-check float-end">
-                  <input className="form-check-input" type="checkbox" checked />
+                <div class="form-check float-end">
+                  <input class="form-check-input" type="checkbox" checked />
                 </div>
               </li>
-              <li className="dropdown-item d-xl-none">
+              <li class="dropdown-item d-xl-none">
                 Exposure
-                <div className="form-check float-end">
-                  <input className="form-check-input" type="checkbox" checked />
+                <div class="form-check float-end">
+                  <input class="form-check-input" type="checkbox" checked />
                 </div>
               </li>
-              <hr className="dropdown-divider" role="separator" />
-              <li className="dropdown-item">
+              <hr class="dropdown-divider" role="separator" />
+              <li class="dropdown-item">
                 <a href="#">Sign Out</a>
               </li>
             </ul>
