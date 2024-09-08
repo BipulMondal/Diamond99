@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import modalImg from "../images/modal.png";
+import modalImg from "../images/modalImg.png";
 import './Modal.css'; 
 
 const HomePageModal = () => {

@@ -56,34 +56,53 @@ const Login = () => {
             </div>
             <form onSubmit={handleSubmit}>
               <div class="mb-3 username">
-                <input
-                  type="text"
-                  name="username"
-                  value={loginData.username}
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  placeholder="Username"
-                  onChange={(e) => handleChnage(e)}
-                />
+                <div className="set_icon">
+                  <input
+                    type="text"
+                    name="username"
+                    value={loginData.username}
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    placeholder="Username"
+                    onChange={(e) => handleChnage(e)}
+                  />
+                  <div className="icons">
+                    <i class="fas fa-user"></i>
+                  </div>
+                </div>
               </div>
               <div class="mb-3">
-                <input
-                  type="password"
-                  name="password"
-                  value={loginData.password}
-                  class="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Password"
-                  onChange={(e) => handleChnage(e)}
-                />
+                <div className="set_icon">
+                  <input
+                    type="password"
+                    name="password"
+                    value={loginData.password}
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                    onChange={(e) => handleChnage(e)}
+                  />
+                  <div className="icons">
+                    <i class="fas fa-key"></i>
+                  </div>
+                </div>
               </div>
-              <button type="submit" class="btn btn-dark login_btn">
-                Login
+              <button type="submit" class="btn btn-primary login_btn">
+                Login <i class="fas fa-sign-in-alt float-end mt-1"></i>
               </button>
 
-              <button type="submit" class="btn btn-dark login_btn">
-                Login with demo ID
+              <button type="submit" class="btn btn-primary login_btn">
+                Login with demo ID{" "}
+                <i class="fas fa-sign-in-alt float-end mt-1"></i>
               </button>
+
+              <small class="recaptchaTerms mt-1">
+                This site is protected by reCAPTCHA and the Google
+                <a href="https://policies.google.com/privacy">Privacy Policy</a>{" "}
+                and
+                <a href="https://policies.google.com/terms">Terms of Service</a>{" "}
+                apply.
+              </small>
             </form>
           </div>
         </div>

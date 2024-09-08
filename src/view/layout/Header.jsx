@@ -28,14 +28,59 @@ const Header = () => {
             <p className="header_blnc">Exp:0</p>
           </div>
           <div>
-            <select class="demo" id="exampleFormControlSelect1">
-              <option selected>Demo</option>
-              <option value="1">Account Statement</option>
-              <option value="2">Current Bet</option>
-              <option value="3">Casino Results</option>
-              <option value="4">Set Button Values</option>
-              <option value="5">Sign Out</option>
-            </select>
+            <a
+              class="demo ms-3 d-none d-xl-block dropdown-toggle"
+              id="react-aria3807262034-2"
+              aria-expanded="false"
+            >
+              Demo<i class="fas fa-chevron-down ms-1"></i>
+            </a>
+
+            <ul
+                x-placement="bottom-end"
+                aria-labelledby="react-aria3807262034-6"
+                class="dropdown-menu"
+                data-popper-reference-hidden="false"
+                data-popper-escaped="false"
+                data-popper-placement="bottom-end"
+              style={{
+                position: "absolute",
+                inset: "0px 0px auto auto",
+                transform: "translate(0px, 21px)",
+              }}
+            >
+              <li className="dropdown-item">
+                <a href="/account-statement">Account Statement</a>
+              </li>
+              <li className="dropdown-item">
+                <a href="/current-bet">Current Bet</a>
+              </li>
+              <li className="dropdown-item">
+                <a href="/casino-results">Casino Results</a>
+              </li>
+              <li className="dropdown-item">
+                <a href="#">Set Button Values</a>
+              </li>
+              <li className="dropdown-item d-xl-none">
+                <a href="#">Rules</a>
+              </li>
+              <li className="dropdown-item d-xl-none">
+                Balance
+                <div className="form-check float-end">
+                  <input className="form-check-input" type="checkbox" checked />
+                </div>
+              </li>
+              <li className="dropdown-item d-xl-none">
+                Exposure
+                <div className="form-check float-end">
+                  <input className="form-check-input" type="checkbox" checked />
+                </div>
+              </li>
+              <hr className="dropdown-divider" role="separator" />
+              <li className="dropdown-item">
+                <a href="#">Sign Out</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
